@@ -12,8 +12,8 @@ CREATE TABLE TB_MEMBER(
    ,REG_DATE date default sysdate
 )
 
---회원 추가
-insert into TB_MEMBER values('julie','1234','줄리','julie@test.com',"N",sysdate);
+insert into TB_MEMBER 
+values('julie','1234','julie','julie@t.com', 'N',sysdate);
 
 --회원 테이블 생성(교재)
 create table t_member(
