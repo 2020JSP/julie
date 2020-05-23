@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원 가입창</title>
+
+<script type="text/javascript">
+function fn_sendMember(){
+   var frmMember=document.frmMember;
+      frmMember.method="post";
+      frmMember.action="member3";
+      frmMember.submit();
+}
+</script>
+</head>
+<body>
+  <form name="frmMember">
+  <table>
+      <th>회원 가입창</th>
+      <tr>
+        <td>아이디</td>
+        <td><input type="text" name="USER_ID"></td>
+      </tr>
+      <tr>
+        <td>비밀번호</td>
+        <td><input type="password" name="USER_PWD"></td>
+      </tr>
+      <tr>
+        <td>이름</td>
+        <td><input type="text" name="USER_NAME"></td>
+      </tr>
+        <tr>
+        <td>이메일</td>
+        <td><input type="text" name="USER_EMAIL"></td>
+      </tr>
+  </table>'
+   <input type="button" value="submit" onclick="fn_sendMember()"/>
+   <input type="reset" value="reset"/>
+   <input type="hidden" name="command" value="addMember" />
+   <input  type="hidden" name="DEL_FLG" value="F" />   
+  </form>
+ </body>
+</html>
