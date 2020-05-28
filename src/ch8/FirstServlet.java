@@ -3,6 +3,7 @@ package ch8;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,8 +22,11 @@ public class FirstServlet extends HttpServlet{
       // addheader 
       // response.addHeader("Refresh","1;url=second");
       // 3. location (java script)
-      out.print("<script type='text/javascript'>");
-      out.print("location.href='second';");
-      out.print("</script>");
+      // out.print("<script type='text/javascript'>"); 
+      // out.print("location.href='second?name=lee';");
+      // out.print("</script>");
+      //4.dispatcher Servlet : URL gonna be /first not /second  
+      RequestDispatcher dispatcher = request.getRequestDispatcher("second");
+      dispatcher.forward(request, response);
    }
 }
