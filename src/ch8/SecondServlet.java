@@ -14,10 +14,11 @@ public class SecondServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)  throws  ServletException, IOException {
       response.setContentType("text/html;charset=utf-8");
       PrintWriter out = response.getWriter();
-      // redirect로 데이터 전달하기 
+      // redirect로 데이터 전달하기 (get)
       // String name = request.getParameter("name"); 
+      String address = (String) request.getAttribute("address");
       out.println("<html><body>");
-      out.println("forward test");
+      out.println("Address : " + address);
       out.println("</body></html>");
    }
 }

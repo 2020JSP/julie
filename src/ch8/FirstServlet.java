@@ -25,7 +25,8 @@ public class FirstServlet extends HttpServlet{
       // out.print("<script type='text/javascript'>"); 
       // out.print("location.href='second?name=lee';");
       // out.print("</script>");
-      //4.dispatcher Servlet : URL gonna be /first not /second  
+      //4.dispatcher Servlet : URL gonna be /first not /second 
+      request.setAttribute("address","Seoul");
       RequestDispatcher dispatcher = request.getRequestDispatcher("second");
       dispatcher.forward(request, response);
    }
