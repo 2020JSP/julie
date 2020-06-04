@@ -13,6 +13,7 @@
 - 쿠키와 세션 알아보기 
     - 깃헙 : 
     [URL](https://github.com/2020JSP/julie/tree/master/src/ch9)
-    - 개념정리 
+    - 개념정리  <br/>
+        👉[세션트레킹](https://juliea.tistory.com/9) <br/>
     
 ---
