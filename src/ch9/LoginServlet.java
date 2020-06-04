@@ -2,6 +2,7 @@ package ch9;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.URLEncoder;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/login")
+@WebServlet("/loginCh9")
 public class LoginServlet extends HttpServlet {
 	public void init() {
 		System.out.println("called init");
@@ -36,8 +37,18 @@ public class LoginServlet extends HttpServlet {
 		data += "email : " + user_email;
 		data += "<br>";
 		data += "phone : " + user_hp;
-		data += "</html></body>";
+		data += "<br>";
+		
+		//URL Rewriting
+		user_address = URLEncoder.encode(user_address, "utf-8");
+		out.print("<a href='/pro07/secondCh9?user_id=" + user_id 
+				             + "&user_pw=" + user_pw 
+				             + "&user_address=" + user_address
+				             + "'>두 번째 서블릿으로 보내기</a>");
+		data = "</body></html>"; 
+		//URL Rewriting
 		out.print(data);
+		
 	}
 
 	public void destroy() {
