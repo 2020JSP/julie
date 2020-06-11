@@ -15,5 +15,7 @@
     [URL](https://github.com/2020JSP/julie/tree/master/src/ch9)
     - 개념정리  <br/>
         👉[세션트레킹](https://juliea.tistory.com/9) <br/>
-    
+        👉[쿠키를 이용한 연동](https://juliea.tistory.com/10) <br/>
+        👉[자바스크립트의 쿠키](https://juliea.tistory.com/11) <br/>
+        👉[세션을 이용한 연동](https://juliea.tistory.com/12) <br/>
 ---
