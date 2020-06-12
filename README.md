@@ -18,7 +18,7 @@
         👉[쿠키를 이용한 연동](https://juliea.tistory.com/10) <br/>
         👉[자바스크립트의 쿠키](https://juliea.tistory.com/11) <br/>
         👉[세션을 이용한 연동](https://juliea.tistory.com/12) <br/>
- - 10장 서블릿의 필터와 리스너 기
+ - 10장 서블릿의 필터와 리스너 기능 
     - 깃헙 : 
     [URL](https://github.com/2020JSP/julie/tree/master/src/ch9)
     - 개념정리 <br/>
