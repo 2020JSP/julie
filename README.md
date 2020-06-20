@@ -20,8 +20,17 @@
         👉[세션을 이용한 연동](https://juliea.tistory.com/12) <br/>
  - 10장 서블릿의 필터와 리스너 기능 
     - 깃헙 : 
-    [URL](https://github.com/2020JSP/julie/tree/master/src/ch9)
+    [URL](https://github.com/2020JSP/julie/tree/master/src/ch10)
     - 개념정리 <br/>
         👉[스코프](https://juliea.tistory.com/13) <br/>
         👉[서블릿관련  Listener API](https://juliea.tistory.com/14) <br/>
--
+ - 11장 JSP의 정의와 구성요소
+    - 깃헙 : 
+    [URL](https://github.com/2020JSP/julie/tree/master/src/ch11)
+    - 개념정리 <br/>
+        👉[JSP , 변환과정 ](https://juliea.tistory.com/15) <br/>
+        👉[디렉티브 태그 ](https://juliea.tistory.com/16) <br/>
+ - 12장 JSP 스크립트 요소 기능 
+     - 개념정리 <br/>
+        👉[ JSP 스크립트 요소  ](https://juliea.tistory.com/17) <br/> 
+----
